@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+textarea {
+  resize: none;
+}
+.card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden relative;
+}
+.badge {
+  @apply bg-secondary-100 text-secondary-200 text-xs uppercase rounded-full font-bold p-2 absolute top-0 mt-2 ml-2;
+}
+.btn {
+  @apply rounded-full uppercase  tracking-wider font-bold cursor-pointer text-xs;
+}
+.recipe {
+  @apply bg-slate-200 inline-block px-3 py-1 ml-2 my-2 rounded-full hover:bg-slate-300;
+}

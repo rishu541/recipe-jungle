@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body class="text-gray-500 font-body">
+    <div class="grid grid-cols-12">
+      <!--   Content Wrapper -->
+      <div class="col-span-2 w-full relative bg-white">
+        <nav class="fixed">
+          <div>
+            <h1
+              class="text-zinc-700 font-bold text-lg p-6 border-b border-gray-100 hover:text-zinc-600"
+            >
+              <a href="/" class="">Recipe Jungle </a>
+            </h1>
+          </div>
+          <ul class="flex flex-col justify-center">
+            <li
+              class="flex items-center py-4 my-2 pr-3 border-l-4 border-primary"
+            >
+              <i class="bx bx-sm bx-home-alt w-6 h-6 mr-3 ml-11"></i>
+              <a href="#" class="font-bold hidden lg:block">
+                <span class="hidden lg:block">Home</span>
+              </a>
+            </li>
+            <li
+              class="flex items-center py-4 my-2 border-l-4 hover:font-bold transition ease-out duration-200"
+            >
+              <i class="bx-sm bx bx-food-menu w-6 h-6 mr-3 ml-11"></i>
+              <a href="#" class="block">
+                <span class="hidden lg:block">Recipes</span>
+              </a>
+            </li>
+            <li
+              class="flex items-center py-4 my-2 border-l-4 hover:font-bold transition ease-out duration-200"
+            >
+              <i class="bx bx-sm bx-message-alt-dots w-6 h-6 mr-3 ml-11"></i>
+              <a href="#" class="block">
+                <span class="hidden lg:block"> Contact </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- End of Nav -->
+
+      <main class="px-16 py-6 bg-gray-100 col-span-10">
+        <div class="text-primary flex justify-end">
+          <a
+            href="#"
+            class="btn border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out px-3 py-2 duration-500"
+            >Log in</a
+          >
+          <a
+            href="#"
+            class="btn ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition px-3 py-2 ease-out duration-500"
+            >Sign Up</a
+          >
+        </div>
+        <section class="container mx-auto my-10 bg-white rounded-lg">
+          <div class="flex justify-between">
+            <div class="px-10 py-20 lg:w-2/4">
+              <p class="uppercase tracking-wider text-xs mb-2 text-gray-400">
+                Search recipe here
+              </p>
+              <h1 class="text-4xl font-bold text-slate-800">
+                Cook What your <span class="text-red-500"> ❤ </span>Want?
+              </h1>
+              <h3 class="text-lg font-semibold mt-1">
+                Any Recipe On your Fingertips
+              </h3>
+              <div class="bg-slate-200 p-3 mt-5 rounded-lg relative">
+                <i class="bx bx-search ml-1"></i>
+                <input
+                  type="text"
+                  placeholder="What to cook Today?"
+                  class="bg-transparent h-full w-full top-0 left-0 absolute rounded-lg pl-10"
+                />
+              </div>
+              <p
+                class="uppercase tracking-wider text-xs ml-2 mt-5 text-gray-400"
+              >
+                Trending
+              </p>
+              <div class="mt-2">
+                <span class="recipe">Veg Idli</span>
+                <span class="recipe">Shushi</span>
+                <span class="recipe">Veg burger</span>
+                <span class="recipe">Gulab Gamun</span>
+                <span class="recipe">Ice Cream</span>
+                <span class="recipe">Dalgona Coffee</span>
+              </div>
+            </div>
+            <div class="hidden w-2/4 lg:block">
+              <img
+                src="./img/cover.jpg"
+                alt=""
+                class="rounded-tr-lg h-full object-cover rounded-br-lg"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="container">
+          <header>
+            <h2 class="text-slate-800 text-6xl font-semibold mb-2">Recipes</h2>
+            <h3 class="text-2xl font-semibold">For Foodies</h3>
+          </header>
+
+          <div>
+            <h4 class="font-bold mt-12 pb-2 border-b border-gray-300">
+              Latest Recipes
+            </h4>
+
+            <div class="mt-8 grid md:grid-cols-3 gap-10">
+              <!-- Cards -->
+
+              <div class="card hover:shadow-lg">
+                <img
+                  src="./img/stew.jpg"
+                  class="rounded w-full h-32 object-cover sm:h-48"
+                  alt="stew"
+                />
+                <div class="m-4">
+                  <span class="font-bold block"> 5 Bean Chlli Stew </span>
+                  <span class="text-gray-500 font-light text-sm block">
+                    Recipe by Mario
+                  </span>
+                </div>
+                <div class="badge flex justify-between items-center">
+                  <i class="bx bx-xs bx-time inline-block"></i>
+                  <span class="font-xs block px-1 p-1">25 mins</span>
+                </div>
+              </div>
+              <div class="card hover:shadow-lg">
+                <img
+                  src="./img/noodles.jpg"
+                  class="rounded w-full h-32 object-cover sm:h-48"
+                  alt="noodles"
+                />
+                <div class="m-4">
+                  <span class="font-bold block">Veg Noodles</span>
+                  <span class="text-gray-500 font-light text-sm block">
+                    Recipe by Sam
+                  </span>
+                </div>
+                <div class="badge flex justify-between items-center">
+                  <i class="bx bx-xs bx-time inline-block"></i>
+                  <span class="font-xs block px-1 p-1">18 mins</span>
+                </div>
+              </div>
+              <div class="card hover:shadow-lg">
+                <img
+                  src="./img/curry.jpg"
+                  class="rounded w-full h-32 object-cover sm:h-48"
+                  alt="curry"
+                />
+                <div class="m-4">
+                  <span class="font-bold block">Tofu Curry</span>
+                  <span class="text-gray-500 font-light text-sm block">
+                    Recipe by Pete
+                  </span>
+                </div>
+                <div class="badge flex justify-between items-center">
+                  <i class="bx bx-xs bx-time inline-block"></i>
+                  <span class="font-xs block px-1 p-1">18 mins</span>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="font-bold mt-12 pb-2 border-b border-gray-300">
+              Latest Recipes
+            </h4>
+            <div class="mt-8 grid md:grid-cols-3 gap-10">
+              <!-- Cards -->
+
+              <div class="card hover:shadow-lg">
+                <img
+                  src="./img/dessert.jpg"
+                  class="rounded w-full h-32 object-cover sm:h-48"
+                  alt="dessert"
+                />
+                <div class="m-4">
+                  <span class="font-bold block"> 5 Bean Chlli Stew </span>
+                  <span class="text-gray-500 font-light text-sm block">
+                    Recipe by Mario
+                  </span>
+                </div>
+                <div class="badge flex justify-between items-center">
+                  <i class="bx bx-xs bx-time inline-block"></i>
+                  <span class="font-xs block px-1 p-1">25 mins</span>
+                </div>
+              </div>
+              <div class="card hover:shadow-lg">
+                <img
+                  src="./img/pasta.jpg"
+                  class="rounded w-full h-32 object-cover sm:h-48"
+                  alt="pasta"
+                />
+                <div class="m-4">
+                  <span class="font-bold block">Veg Noodles</span>
+                  <span class="text-gray-500 font-light text-sm block">
+                    Recipe by Sam
+                  </span>
+                </div>
+                <div class="badge flex justify-between items-center">
+                  <i class="bx bx-xs bx-time inline-block"></i>
+                  <span class="font-xs block px-1 p-1">18 mins</span>
+                </div>
+              </div>
+              <div class="card hover:shadow-lg">
+                <img
+                  src="./img/eggspinch.jpg"
+                  class="rounded w-full h-32 object-cover sm:h-48"
+                  alt="eggspinch"
+                />
+                <div class="m-4">
+                  <span class="font-bold block">Tofu Curry</span>
+                  <span class="text-gray-500 font-light text-sm block">
+                    Recipe by Pete
+                  </span>
+                </div>
+                <div class="badge flex justify-between items-center">
+                  <i class="bx bx-xs bx-time inline-block"></i>
+                  <span class="font-xs block px-1 p-1">18 mins</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center my-10">
+            <div
+              class="bg-secondary-100 text-sm text-secondary-200 p-1 btn hover:shadow-inner transform hover:scale-110 hover:bg-secondary-100/50 transition ease-out duration-200"
+            >
+              Load More
+            </div>
+          </div>
+        </section>
+        <section class="container mx-auto my-10 bg-white rounded-lg">
+          <div class="flex justify-between">
+            <div class="hidden w-2/4 lg:block">
+              <img
+                src="./img/contact.jpg"
+                alt=""
+                class="rounded-tl-lg h-full object-cover rounded-bl-lg"
+              />
+            </div>
+            <div class="px-10 py-20 lg:w-2/4">
+              <p class="uppercase tracking-wider text-xs mb-2 text-gray-400">
+                Contact Us
+              </p>
+              <h1 class="text-4xl font-bold text-slate-800">
+                Got any Queries?
+              </h1>
+              <h3 class="text-lg font-semibold mt-1">
+                We will get back to you soon
+              </h3>
+              <div class="bg-slate-200 p-3 mt-5 rounded-lg relative">
+                <i class="bx bx-search ml-1"></i>
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  class="bg-transparent h-full w-full top-0 left-0 absolute rounded-lg pl-10"
+                />
+              </div>
+              <div class="bg-slate-200 p-3 mt-5 rounded-lg relative">
+                <i class="bx bx-mail-send ml-1"></i>
+                <input
+                  type="text"
+                  placeholder="Email"
+                  class="bg-transparent h-full w-full top-0 left-0 absolute rounded-lg pl-10"
+                />
+              </div>
+              <div class="bg-slate-200 p-3 mt-5 h-32 rounded-lg relative">
+                <i class="bx bx-message-square ml-1"></i>
+                <textarea
+                  type="text"
+                  placeholder="Your Message"
+                  class="bg-transparent w-full pt-2 top-0 h-full left-0 absolute rounded-lg pl-10"
+                >
+                </textarea>
+              </div>
+              <button
+                class="btn mt-3 px-5 py-3 uppercase bg-primary text-white"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
